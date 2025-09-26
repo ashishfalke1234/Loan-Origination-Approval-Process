@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Minimum_Salary</fullName>
+    <active>true</active>
+    <description>Ensures the customer&apos;s annual salary is at least 500,000 before a loan application can be saved</description>
+    <errorConditionFormula>Customer_Annual_Salary__c &lt; 500000</errorConditionFormula>
+    <errorMessage>The customer&apos;s annual salary must be 500,000 or greater to create a loan application.</errorMessage>
+</ValidationRule>

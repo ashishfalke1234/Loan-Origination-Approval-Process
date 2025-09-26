@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>OIP</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>A dedicated app for managing the end-to-end loan origination and approval lifecycle</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Loan Processing</label>
+    <navType>Standard</navType>
+    <tabs>standard-Customer</tabs>
+    <tabs>Loan_Application__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Loan_Processing_UtilityBar</utilityBar>
+</CustomApplication>

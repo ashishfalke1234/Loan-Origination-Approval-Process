@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <!-- This is our master list for the Loan Origination System -->
-
-    <!-- Phase 3: Data Modeling -->
-    <types>
-        <members>Loan_Application__c</members>
-        <name>CustomObject</name>
-    </types>
-
-    <!-- Phase 4: Automation -->
-    <types>
-        <members>Loan_Application__c</members>
-        <name>ApprovalProcess</name>
-    </types>
-    <types>
-        <members>*</members> <!-- We'll get all flows for now -->
-        <name>Flow</name>
-    </types>
-
-    <!-- Phase 5: Apex Development -->
+    <!-- Apex Code -->
     <types>
         <members>*</members>
         <name>ApexClass</name>
@@ -27,26 +9,52 @@
         <members>*</members>
         <name>ApexTrigger</name>
     </types>
-
-    <!-- Phase 6 & 7: UI & Integration -->
+    <!-- Lightning Components -->
     <types>
         <members>*</members>
         <name>LightningComponentBundle</name>
     </types>
+    <!-- Automation -->
+    <types>
+        <members>Loan_Application__c.Loan_Application_Approval_Process</members>
+        <name>ApprovalProcess</name>
+    </types>
+    <types>
+        <members>Loan_Application_Create_Disbursal_Task</members>
+        <name>Flow</name>
+    </types>
+    <!-- Objects and Layouts -->
+    <types>
+        <members>Loan_Application__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Loan_Application__c-Loan Application Layout</members>
+        <name>Layout</name>
+    </types>
+    <!-- UI and Navigation -->
     <types>
         <members>Loan_Processing</members>
         <name>CustomApplication</name>
     </types>
-    
-    <!-- Phase 9: Analytics -->
     <types>
-        <members>LoanApplicationReports</members> <!-- A folder for our reports -->
+        <members>Loan_Application__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Loan_Application_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <!-- Analytics (Now in Public Folders) -->
+    <types>
+        <members>LoanApplicationReports</members>
+        <members>LoanApplicationReports/Loan_Pipeline_by_Status</members>
         <name>Report</name>
     </types>
-    <types>
-        <members>LoanManagementDashboards</members> <!-- A folder for our dashboards -->
-        <name>Dashboard</name>
-    </types>
-
+	<types>
+		<members>LoanManagementDashboards</members>
+		<members>LoanManagementDashboards/Loan_Management_Dashboard</members>
+		<name>Dashboard</name>
+	</types>
     <version>58.0</version>
 </Package>
