@@ -1,18 +1,25 @@
-# Salesforce DX Project: Next Steps
+# TCS Lastmile Project: Loan Origination & Approval System
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This repository contains the source code and metadata for a comprehensive Loan Origination and Approval Management System built on the Salesforce Platform. The project was developed as part of the TCS Lastmile program and demonstrates a full range of Salesforce admin and developer skills.
 
-## How Do You Plan to Deploy Your Changes?
+## 1. Project Overview
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+The system is designed to automate and streamline the entire loan lifecycle for a financial institution, replacing a manual process of spreadsheets and emails with a robust, secure, and transparent application.
 
-## Configure Your Salesforce DX Project
+**Core Features:**
+- **Data Model:** A self-contained `Loan Application` object with custom fields to track all necessary information.
+- **Data Integrity:** Validation Rules to enforce business policies like minimum credit score and salary.
+- **Automated EMI Calculation:** An Apex Trigger that automatically calculates the Estimated Monthly Installment (EMI).
+- **UI/UX:** A dedicated "Loan Processing" Lightning App with a clean page layout and a visual Path.
+- **Complex Approval Workflow:** A multi-step approval process that routes applications to the correct teams (Queues).
+- **Integration:** A Lightning Web Component (LWC) that simulates a callout to an external credit bureau.
+- **Post-Approval Automation:** A Record-Triggered Flow that automatically creates a task for the disbursal team.
+- **Analytics:** A real-time Report and Dashboard for management to track the loan pipeline.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## 2. Technical Components
 
-## Read All About It
+This project utilizes a wide range of Salesforce technologies:
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- **Admin:** Custom Objects, Fields, Page Layouts, Lightning App Builder, Validation Rules, Approval Processes, Flow Builder, Reports & Dashboards.
+- **Developer:** Apex (Classes, Triggers, Test Classes), SOQL, Lightning Web Components (HTML, JS), Apex Callouts (REST).
+- **Tools:** VS Code, Salesforce CLI (SFDX), Git & GitHub, Data Loader.
