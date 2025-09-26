@@ -26,6 +26,6 @@ This project utilizes a wide range of Salesforce technologies:
 
 ## 4. Project Documentation & Demo
 
-* **Project Demo Video:** A complete 5-minute video walkthrough of the application can be viewed here: [**\[Link to your unlisted YouTube/Google Drive video\]**](https://drive.google.com/file/d/1gucw7mKXJR3VzZsl2bcqI9nlw1FXpg3k/view?usp=sharing)
+* **Project Demo Video:** A complete 5-minute video walkthrough of the application can be viewed here: (https://drive.google.com/file/d/1gucw7mKXJR3VzZsl2bcqI9nlw1FXpg3k/view?usp=sharing)
 
 * **Phase-by-Phase Documentation:** Detailed documentation for all 10 project phases, including objectives, outcomes, and supporting evidence, is available in the `/documentation` folder of this repository.
